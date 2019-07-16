@@ -1,0 +1,22 @@
+{
+  "name": "parcel-plugin-overwolf",
+  "description": "Parcel plugin for Overwolf projects",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Sam McCord",
+    "email": "sam.mccord@protonmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/sammccord/parcel-plugin-overwolf/issues"
+  },
+  "keywords": [
+    "parcel",
+    "plugin",
+    "overwolf"
+  ],
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
