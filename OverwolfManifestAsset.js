@@ -1,5 +1,7 @@
 const { Asset } = require('parcel-bundler')
 
+const iconKeys = ['icon', 'icon_grey', 'launcher_icon', 'splash_image']
+
 class OverwolfManifestAsset extends Asset {
   constructor (name, options) {
     super(name, options)
@@ -19,9 +21,9 @@ class OverwolfManifestAsset extends Asset {
 
   processMeta () {
     const meta = this.ast.meta
-    for (let icon in ['icon', 'icon_grey', 'launcher_icon', 'splash_image']) {
+    iconKeys.forEach(icon => {
       if (meta[icon]) meta[icon] = this.addURLDependency(meta.icon)
-    }
+    })
   }
 
   processData () {

@@ -1,7 +1,7 @@
 {
   "name": "parcel-plugin-overwolf",
   "description": "Parcel plugin for Overwolf projects",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "Apache-2.0",
   "author": {
