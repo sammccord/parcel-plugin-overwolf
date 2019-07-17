@@ -22,7 +22,7 @@ class OverwolfManifestAsset extends Asset {
   processMeta () {
     const meta = this.ast.meta
     iconKeys.forEach(icon => {
-      if (meta[icon]) meta[icon] = this.addURLDependency(meta.icon)
+      if (meta[icon]) meta[icon] = this.addURLDependency(meta[icon])
     })
   }
 
